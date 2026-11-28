@@ -132,18 +132,6 @@
     "raw_date": "2026-11-27 01:43:35"
   },
   {
-    "server": "Sv4",
-    "boss": "Nightmare",
-    "last_kill": "2026-11-27T06:44:56+02:00",
-    "killer": "Zlostar",
-    "earliest_spawn": "2026-11-28T23:39:56+02:00",
-    "latest_spawn": "2026-11-28T23:39:56+02:00",
-    "min_hours": 40.9,
-    "max_hours": 40.9,
-    "is_fixed": true,
-    "raw_date": "2026-11-27 01:44:56"
-  },
-  {
     "server": "Sv9",
     "boss": "Nightmare",
     "last_kill": "2026-11-27T06:48:05+02:00",
@@ -202,18 +190,6 @@
     "max_hours": 40.9,
     "is_fixed": true,
     "raw_date": "2026-11-27 07:21:43"
-  },
-  {
-    "server": "Sv11",
-    "boss": "Core Magriffy",
-    "last_kill": "2026-11-25T17:31:10+02:00",
-    "killer": "SolrakDVDL",
-    "earliest_spawn": "2026-11-29T06:06:10+02:00",
-    "latest_spawn": "2026-11-29T06:06:10+02:00",
-    "min_hours": 84.6,
-    "max_hours": 84.6,
-    "is_fixed": true,
-    "raw_date": "2026-11-25 12:31:10"
   },
   {
     "server": "Sv19",
@@ -456,6 +432,18 @@
     "raw_date": "2026-11-28 10:35:57"
   },
   {
+    "server": "Sv4",
+    "boss": "Nightmare",
+    "last_kill": "2026-11-28T15:39:38+02:00",
+    "killer": "LisY",
+    "earliest_spawn": "2026-11-30T08:34:38+02:00",
+    "latest_spawn": "2026-11-30T08:34:38+02:00",
+    "min_hours": 40.9,
+    "max_hours": 40.9,
+    "is_fixed": true,
+    "raw_date": "2026-11-28 10:39:38"
+  },
+  {
     "server": "Sv3",
     "boss": "Nix",
     "last_kill": "2026-11-27T09:14:36+02:00",
@@ -670,6 +658,18 @@
     "max_hours": 84.6,
     "is_fixed": true,
     "raw_date": "2026-11-28 10:33:23"
+  },
+  {
+    "server": "Sv11",
+    "boss": "Core Magriffy",
+    "last_kill": "2026-11-28T15:40:01+02:00",
+    "killer": "SolrakDVDL",
+    "earliest_spawn": "2026-12-02T04:15:01+02:00",
+    "latest_spawn": "2026-12-02T04:15:01+02:00",
+    "min_hours": 84.6,
+    "max_hours": 84.6,
+    "is_fixed": true,
+    "raw_date": "2026-11-28 10:40:01"
   },
   {
     "server": "Sv1",
