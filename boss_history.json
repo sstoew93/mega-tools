@@ -742,5 +742,23 @@
     "boss": "Nix",
     "killer": "PEGAOVEIO",
     "raw_date_br": "2026-11-28 10:30:21"
+  },
+  {
+    "server": "Sv10",
+    "boss": "Lord of Ferea",
+    "killer": "XxVILLEGAS",
+    "raw_date_br": "2026-11-28 10:32:18"
+  },
+  {
+    "server": "Sv9",
+    "boss": "Nix",
+    "killer": "DlZot",
+    "raw_date_br": "2026-11-28 10:31:54"
+  },
+  {
+    "server": "Sv7",
+    "boss": "Nix",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-28 10:31:38"
   }
 ]

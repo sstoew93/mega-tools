@@ -216,18 +216,6 @@
     "raw_date": "2026-11-27 07:21:43"
   },
   {
-    "server": "Sv14",
-    "boss": "Core Magriffy",
-    "last_kill": "2026-11-25T16:52:02+02:00",
-    "killer": "Zlostar",
-    "earliest_spawn": "2026-11-29T05:27:02+02:00",
-    "latest_spawn": "2026-11-29T05:27:02+02:00",
-    "min_hours": 84.6,
-    "max_hours": 84.6,
-    "is_fixed": true,
-    "raw_date": "2026-11-25 11:52:02"
-  },
-  {
     "server": "Sv3",
     "boss": "Core Magriffy",
     "last_kill": "2026-11-25T16:54:24+02:00",
@@ -238,18 +226,6 @@
     "max_hours": 84.6,
     "is_fixed": true,
     "raw_date": "2026-11-25 11:54:24"
-  },
-  {
-    "server": "Sv7",
-    "boss": "Core Magriffy",
-    "last_kill": "2026-11-25T17:00:57+02:00",
-    "killer": "MrKaKaYou",
-    "earliest_spawn": "2026-11-29T05:35:57+02:00",
-    "latest_spawn": "2026-11-29T05:35:57+02:00",
-    "min_hours": 84.6,
-    "max_hours": 84.6,
-    "is_fixed": true,
-    "raw_date": "2026-11-25 12:00:57"
   },
   {
     "server": "Sv4",
@@ -516,18 +492,6 @@
     "raw_date": "2026-11-26 05:39:11"
   },
   {
-    "server": "Sv10",
-    "boss": "Lord of Ferea",
-    "last_kill": "2026-11-27T06:51:40+02:00",
-    "killer": "Colt90",
-    "earliest_spawn": "2026-12-01T04:51:40+02:00",
-    "latest_spawn": "2026-12-04T20:51:40+02:00",
-    "min_hours": 94.0,
-    "max_hours": 182.0,
-    "is_fixed": false,
-    "raw_date": "2026-11-27 01:51:40"
-  },
-  {
     "server": "Sv3",
     "boss": "Nix",
     "last_kill": "2026-11-27T09:14:36+02:00",
@@ -552,18 +516,6 @@
     "raw_date": "2026-11-27 07:30:31"
   },
   {
-    "server": "Sv7",
-    "boss": "Nix",
-    "last_kill": "2026-11-27T13:27:47+02:00",
-    "killer": "SolrakDVDL",
-    "earliest_spawn": "2026-12-01T17:32:47+02:00",
-    "latest_spawn": "2026-12-02T07:27:47+02:00",
-    "min_hours": 100.1,
-    "max_hours": 114.0,
-    "is_fixed": false,
-    "raw_date": "2026-11-27 08:27:47"
-  },
-  {
     "server": "Sv6",
     "boss": "Nix",
     "last_kill": "2026-11-27T13:32:11+02:00",
@@ -586,18 +538,6 @@
     "max_hours": 114.0,
     "is_fixed": false,
     "raw_date": "2026-11-27 14:33:48"
-  },
-  {
-    "server": "Sv9",
-    "boss": "Nix",
-    "last_kill": "2026-11-27T22:39:55+02:00",
-    "killer": "SicooBET",
-    "earliest_spawn": "2026-12-02T02:44:55+02:00",
-    "latest_spawn": "2026-12-02T16:39:55+02:00",
-    "min_hours": 100.1,
-    "max_hours": 114.0,
-    "is_fixed": false,
-    "raw_date": "2026-11-27 17:39:55"
   },
   {
     "server": "Sv17",
@@ -730,6 +670,30 @@
     "max_hours": 84.6,
     "is_fixed": true,
     "raw_date": "2026-11-28 10:31:12"
+  },
+  {
+    "server": "Sv7",
+    "boss": "Core Magriffy",
+    "last_kill": "2026-11-28T15:31:32+02:00",
+    "killer": "Boss1987",
+    "earliest_spawn": "2026-12-02T04:06:32+02:00",
+    "latest_spawn": "2026-12-02T04:06:32+02:00",
+    "min_hours": 84.6,
+    "max_hours": 84.6,
+    "is_fixed": true,
+    "raw_date": "2026-11-28 10:31:32"
+  },
+  {
+    "server": "Sv14",
+    "boss": "Core Magriffy",
+    "last_kill": "2026-11-28T15:31:52+02:00",
+    "killer": "FatherMU",
+    "earliest_spawn": "2026-12-02T04:06:52+02:00",
+    "latest_spawn": "2026-12-02T04:06:52+02:00",
+    "min_hours": 84.6,
+    "max_hours": 84.6,
+    "is_fixed": true,
+    "raw_date": "2026-11-28 10:31:52"
   },
   {
     "server": "Sv1",
@@ -1104,6 +1068,18 @@
     "raw_date": "2026-11-28 10:25:45"
   },
   {
+    "server": "Sv10",
+    "boss": "Lord of Ferea",
+    "last_kill": "2026-11-28T15:32:18+02:00",
+    "killer": "XxVILLEGAS",
+    "earliest_spawn": "2026-12-02T13:32:18+02:00",
+    "latest_spawn": "2026-12-06T05:32:18+02:00",
+    "min_hours": 94.0,
+    "max_hours": 182.0,
+    "is_fixed": false,
+    "raw_date": "2026-11-28 10:32:18"
+  },
+  {
     "server": "Sv19",
     "boss": "Nix",
     "last_kill": "2026-11-28T14:10:51+02:00",
@@ -1210,6 +1186,30 @@
     "max_hours": 114.0,
     "is_fixed": false,
     "raw_date": "2026-11-28 10:30:21"
+  },
+  {
+    "server": "Sv7",
+    "boss": "Nix",
+    "last_kill": "2026-11-28T15:31:38+02:00",
+    "killer": "SolrakDVDL",
+    "earliest_spawn": "2026-12-02T19:36:38+02:00",
+    "latest_spawn": "2026-12-03T09:31:38+02:00",
+    "min_hours": 100.1,
+    "max_hours": 114.0,
+    "is_fixed": false,
+    "raw_date": "2026-11-28 10:31:38"
+  },
+  {
+    "server": "Sv9",
+    "boss": "Nix",
+    "last_kill": "2026-11-28T15:31:54+02:00",
+    "killer": "DlZot",
+    "earliest_spawn": "2026-12-02T19:36:54+02:00",
+    "latest_spawn": "2026-12-03T09:31:54+02:00",
+    "min_hours": 100.1,
+    "max_hours": 114.0,
+    "is_fixed": false,
+    "raw_date": "2026-11-28 10:31:54"
   },
   {
     "server": "Sv1",
