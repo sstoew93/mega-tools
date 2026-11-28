@@ -252,30 +252,6 @@
     "raw_date": "2026-11-25 12:00:57"
   },
   {
-    "server": "Sv6",
-    "boss": "Core Magriffy",
-    "last_kill": "2026-11-25T17:04:37+02:00",
-    "killer": "Clinkz1102",
-    "earliest_spawn": "2026-11-29T05:39:37+02:00",
-    "latest_spawn": "2026-11-29T05:39:37+02:00",
-    "min_hours": 84.6,
-    "max_hours": 84.6,
-    "is_fixed": true,
-    "raw_date": "2026-11-25 12:04:37"
-  },
-  {
-    "server": "Sv9",
-    "boss": "Core Magriffy",
-    "last_kill": "2026-11-25T17:06:22+02:00",
-    "killer": "PinkKitty",
-    "earliest_spawn": "2026-11-29T05:41:22+02:00",
-    "latest_spawn": "2026-11-29T05:41:22+02:00",
-    "min_hours": 84.6,
-    "max_hours": 84.6,
-    "is_fixed": true,
-    "raw_date": "2026-11-25 12:06:22"
-  },
-  {
     "server": "Sv4",
     "boss": "Core Magriffy",
     "last_kill": "2026-11-25T17:12:28+02:00",
@@ -730,6 +706,30 @@
     "max_hours": 84.6,
     "is_fixed": true,
     "raw_date": "2026-11-28 10:30:09"
+  },
+  {
+    "server": "Sv6",
+    "boss": "Core Magriffy",
+    "last_kill": "2026-11-28T15:31:07+02:00",
+    "killer": "Parallel",
+    "earliest_spawn": "2026-12-02T04:06:07+02:00",
+    "latest_spawn": "2026-12-02T04:06:07+02:00",
+    "min_hours": 84.6,
+    "max_hours": 84.6,
+    "is_fixed": true,
+    "raw_date": "2026-11-28 10:31:07"
+  },
+  {
+    "server": "Sv9",
+    "boss": "Core Magriffy",
+    "last_kill": "2026-11-28T15:31:12+02:00",
+    "killer": "JonD",
+    "earliest_spawn": "2026-12-02T04:06:12+02:00",
+    "latest_spawn": "2026-12-02T04:06:12+02:00",
+    "min_hours": 84.6,
+    "max_hours": 84.6,
+    "is_fixed": true,
+    "raw_date": "2026-11-28 10:31:12"
   },
   {
     "server": "Sv1",
