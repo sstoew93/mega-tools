@@ -41,6 +41,7 @@ function initBot() {
     const statusDiv = document.getElementById('status');
     const logDiv = document.getElementById('log');
 
+    // --- CLEAR LOG BUTTON LOGIC ---
     const clearLogBtn = document.getElementById('clearLogBtn');
     clearLogBtn.addEventListener('click', () => {
         logDiv.innerHTML = '[System] Log cleared.';
@@ -98,6 +99,7 @@ function initBot() {
             log(`▶️ Sequence triggered by "${matchedTrigger}" from ${sender} in #${channel}. First message in ${initialDelay}s...`);
             await sleep(initialDelay * 1000);
 
+            // SEND MESSAGE 1
             if (canSendMessage()) {
                 let msgToSend = botConfig.msg1;
                 if (botConfig.prefixMap[channel]) {
@@ -113,6 +115,7 @@ function initBot() {
                 return;
             }
 
+            // SEND MESSAGE 2
             if (botConfig.hasMsg2) {
                 await sleep(botConfig.delay2 * 1000);
                 if (!chatSocket || chatSocket.readyState !== WebSocket.OPEN) return;
@@ -126,6 +129,7 @@ function initBot() {
                 }
             }
 
+            // SEND MESSAGE 3
             if (botConfig.hasMsg3) {
                 await sleep(botConfig.delay3 * 1000);
                 if (!chatSocket || chatSocket.readyState !== WebSocket.OPEN) return;
@@ -162,6 +166,7 @@ function initBot() {
         const msgCount = parseInt(msgSlider.value);
         const botUsername = document.getElementById('username').value.trim().toLowerCase();
 
+        // --- PARSE CHANNELS AND PREFIXES ---
         const rawChannels = document.getElementById('channels').value;
         let parsedChannels = [];
         let prefixMap = {}; 
@@ -173,10 +178,10 @@ function initBot() {
             let prefix = "";
             while (clean.startsWith('!') || clean.startsWith('#')) {
                 prefix += clean[0];
-                clean = clean.substring(1).trim(); 
+                clean = clean.substring(1);
             }
             
-            clean = clean.replace(/#/g, '').trim(); 
+            clean = clean.replace(/#/g, '');
 
             if (clean) {
                 parsedChannels.push(clean);
@@ -186,6 +191,7 @@ function initBot() {
             }
         });
 
+        // --- SPECIFIC BOT RESTRICTION ---
         const authorizedBots = ["cheaponess", "misskittyy777"];
         const protectedChannel = "sstoew93";
 
@@ -199,9 +205,12 @@ function initBot() {
                 }
             }
         }
+        // ---------------------------------
 
+        // --- PARSE IGNORED CHANNELS ---
         const rawIgnored = document.getElementById('ignoredChannels').value;
         let ignoredChannels = rawIgnored.split(',').map(c => c.trim().replace('#', '').toLowerCase()).filter(c => c);
+        // ------------------------------
 
         const rawTriggerInput = document.getElementById('trigger').value;
         let parsedTriggers = [];
@@ -291,7 +300,8 @@ function initBot() {
                 });
             }
 
-            if (tags['source-room-id'] && tags['room-id'] && tags['source-room-id'] !== tags['room-id']) {
+            // --- ORIGINAL SHARED CHAT BLOCKER (Reverted) ---
+            if (tags['source-room-id'] && tags['source-room-id'] !== tags['room-id']) {
                 return; 
             }
 
@@ -302,8 +312,6 @@ function initBot() {
                 const text = match[2];
                 const lowerText = text.toLowerCase();
                 
-                if (!botConfig.channels.includes(channel)) return;
-
                 if (botConfig.ignoredChannels.includes(channel)) {
                     return; 
                 }
@@ -324,6 +332,7 @@ function initBot() {
                 
                 const isAuthorizedUser = isBroadcaster || isModerator || isAnnouncement;
 
+                // --- SPAM TRACKER ---
                 const cleanText = text.trim();
                 if (cleanText.startsWith('!')) {
                     const command = cleanText.split(' ')[0].toLowerCase();
@@ -335,8 +344,8 @@ function initBot() {
                     if (!commandCooldowns[channel][command] || now > commandCooldowns[channel][command]) {
                         if (!commandTracker[channel][command]) commandTracker[channel][command] = [];
                         
-                        // 120-second (2 minute) memory window for slow spammers
-                        commandTracker[channel][command] = commandTracker[channel][command].filter(ts => now - ts < 120000);
+                        // Original 60-second window (60000ms)
+                        commandTracker[channel][command] = commandTracker[channel][command].filter(ts => now - ts < 60000);
                         commandTracker[channel][command].push(now);
                         
                         if (commandTracker[channel][command].length >= 5) {
