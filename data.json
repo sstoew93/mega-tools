@@ -240,18 +240,6 @@
     "raw_date": "2026-11-27 07:21:43"
   },
   {
-    "server": "Sv1",
-    "boss": "Core Magriffy",
-    "last_kill": "2026-11-25T16:50:12+02:00",
-    "killer": "GatlingGun",
-    "earliest_spawn": "2026-11-29T05:25:12+02:00",
-    "latest_spawn": "2026-11-29T05:25:12+02:00",
-    "min_hours": 84.6,
-    "max_hours": 84.6,
-    "is_fixed": true,
-    "raw_date": "2026-11-25 11:50:12"
-  },
-  {
     "server": "Sv14",
     "boss": "Core Magriffy",
     "last_kill": "2026-11-25T16:52:02+02:00",
@@ -432,42 +420,6 @@
     "raw_date": "2026-11-25 13:43:44"
   },
   {
-    "server": "Sv6",
-    "boss": "Selupan",
-    "last_kill": "2026-11-28T14:29:00+02:00",
-    "killer": "PinkKitty",
-    "earliest_spawn": "2026-11-30T00:29:00+02:00",
-    "latest_spawn": "2026-11-30T00:29:00+02:00",
-    "min_hours": 34.0,
-    "max_hours": 34.0,
-    "is_fixed": true,
-    "raw_date": "2026-11-28 09:29:00"
-  },
-  {
-    "server": "Sv15",
-    "boss": "Selupan",
-    "last_kill": "2026-11-28T14:33:10+02:00",
-    "killer": "PinkKitty",
-    "earliest_spawn": "2026-11-30T00:33:10+02:00",
-    "latest_spawn": "2026-11-30T00:33:10+02:00",
-    "min_hours": 34.0,
-    "max_hours": 34.0,
-    "is_fixed": true,
-    "raw_date": "2026-11-28 09:33:10"
-  },
-  {
-    "server": "Sv7",
-    "boss": "Selupan",
-    "last_kill": "2026-11-28T14:34:29+02:00",
-    "killer": "PinkKitty",
-    "earliest_spawn": "2026-11-30T00:34:29+02:00",
-    "latest_spawn": "2026-11-30T00:34:29+02:00",
-    "min_hours": 34.0,
-    "max_hours": 34.0,
-    "is_fixed": true,
-    "raw_date": "2026-11-28 09:34:29"
-  },
-  {
     "server": "Sv9",
     "boss": "Selupan",
     "last_kill": "2026-11-28T14:36:59+02:00",
@@ -612,6 +564,42 @@
     "raw_date": "2026-11-28 10:23:08"
   },
   {
+    "server": "Sv7",
+    "boss": "Selupan",
+    "last_kill": "2026-11-28T15:23:31+02:00",
+    "killer": "ShuraSL",
+    "earliest_spawn": "2026-11-30T01:23:31+02:00",
+    "latest_spawn": "2026-11-30T01:23:31+02:00",
+    "min_hours": 34.0,
+    "max_hours": 34.0,
+    "is_fixed": true,
+    "raw_date": "2026-11-28 10:23:31"
+  },
+  {
+    "server": "Sv6",
+    "boss": "Selupan",
+    "last_kill": "2026-11-28T15:23:45+02:00",
+    "killer": "Winslayer",
+    "earliest_spawn": "2026-11-30T01:23:45+02:00",
+    "latest_spawn": "2026-11-30T01:23:45+02:00",
+    "min_hours": 34.0,
+    "max_hours": 34.0,
+    "is_fixed": true,
+    "raw_date": "2026-11-28 10:23:45"
+  },
+  {
+    "server": "Sv15",
+    "boss": "Selupan",
+    "last_kill": "2026-11-28T15:24:05+02:00",
+    "killer": "kurusawa",
+    "earliest_spawn": "2026-11-30T01:24:05+02:00",
+    "latest_spawn": "2026-11-30T01:24:05+02:00",
+    "min_hours": 34.0,
+    "max_hours": 34.0,
+    "is_fixed": true,
+    "raw_date": "2026-11-28 10:24:05"
+  },
+  {
     "server": "Sv15",
     "boss": "Lord Silvester",
     "last_kill": "2026-11-26T09:49:28+02:00",
@@ -670,18 +658,6 @@
     "max_hours": 93.1,
     "is_fixed": true,
     "raw_date": "2026-11-26 05:03:04"
-  },
-  {
-    "server": "Sv17",
-    "boss": "Lord Silvester",
-    "last_kill": "2026-11-26T10:05:16+02:00",
-    "killer": "sunamo",
-    "earliest_spawn": "2026-11-30T07:10:16+02:00",
-    "latest_spawn": "2026-11-30T07:10:16+02:00",
-    "min_hours": 93.1,
-    "max_hours": 93.1,
-    "is_fixed": true,
-    "raw_date": "2026-11-26 05:05:16"
   },
   {
     "server": "Sv19",
@@ -913,6 +889,18 @@
   },
   {
     "server": "Sv1",
+    "boss": "Core Magriffy",
+    "last_kill": "2026-11-28T15:24:22+02:00",
+    "killer": "MALIGNASL",
+    "earliest_spawn": "2026-12-02T03:59:22+02:00",
+    "latest_spawn": "2026-12-02T03:59:22+02:00",
+    "min_hours": 84.6,
+    "max_hours": 84.6,
+    "is_fixed": true,
+    "raw_date": "2026-11-28 10:24:22"
+  },
+  {
+    "server": "Sv1",
     "boss": "Lord Silvester",
     "last_kill": "2026-11-28T15:15:36+02:00",
     "killer": "XDoiDinhaX",
@@ -1006,6 +994,18 @@
     "max_hours": 93.1,
     "is_fixed": true,
     "raw_date": "2026-11-28 10:22:54"
+  },
+  {
+    "server": "Sv17",
+    "boss": "Lord Silvester",
+    "last_kill": "2026-11-28T15:23:51+02:00",
+    "killer": "lukespeed",
+    "earliest_spawn": "2026-12-02T12:28:51+02:00",
+    "latest_spawn": "2026-12-02T12:28:51+02:00",
+    "min_hours": 93.1,
+    "max_hours": 93.1,
+    "is_fixed": true,
+    "raw_date": "2026-11-28 10:23:51"
   },
   {
     "server": "Sv1",
