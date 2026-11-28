@@ -636,18 +636,6 @@
     "raw_date": "2026-11-27 03:12:20"
   },
   {
-    "server": "Sv18",
-    "boss": "Nix",
-    "last_kill": "2026-11-27T08:25:05+02:00",
-    "killer": "Sacakaka",
-    "earliest_spawn": "2026-12-01T12:30:05+02:00",
-    "latest_spawn": "2026-12-02T02:25:05+02:00",
-    "min_hours": 100.1,
-    "max_hours": 114.0,
-    "is_fixed": false,
-    "raw_date": "2026-11-27 03:25:05"
-  },
-  {
     "server": "Sv3",
     "boss": "Nix",
     "last_kill": "2026-11-27T09:14:36+02:00",
@@ -1210,6 +1198,18 @@
     "max_hours": 114.0,
     "is_fixed": false,
     "raw_date": "2026-11-28 10:26:14"
+  },
+  {
+    "server": "Sv18",
+    "boss": "Nix",
+    "last_kill": "2026-11-28T15:26:29+02:00",
+    "killer": "Vodkinha",
+    "earliest_spawn": "2026-12-02T19:31:29+02:00",
+    "latest_spawn": "2026-12-03T09:26:29+02:00",
+    "min_hours": 100.1,
+    "max_hours": 114.0,
+    "is_fixed": false,
+    "raw_date": "2026-11-28 10:26:29"
   },
   {
     "server": "Sv1",
