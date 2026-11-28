@@ -195,13 +195,11 @@ function initBot() {
         const authorizedBots = ["cheaponess", "misskittyy777"];
         const protectedChannel = "sstoew93";
 
-        // If the bot is NOT one of the authorized ones, remove the protected channel
         if (!authorizedBots.includes(botUsername)) {
             if (parsedChannels.includes(protectedChannel)) {
                 parsedChannels = parsedChannels.filter(ch => ch !== protectedChannel);
                 log(`⚠️ RESTRICTION: "${protectedChannel}" channel removed.`);
                 
-                // Also remove it from the prefix map just in case it was set
                 if (prefixMap[protectedChannel]) {
                     delete prefixMap[protectedChannel];
                 }
@@ -302,7 +300,9 @@ function initBot() {
                 });
             }
 
-            if (tags['source-room-id'] && tags['source-room-id'] !== tags['room-id']) {
+            // --- FIXED SHARED CHAT BLOCKER ---
+            // Added '&& tags['room-id']' to prevent dropping messages if Twitch fails to send the room ID.
+            if (tags['source-room-id'] && tags['room-id'] && tags['source-room-id'] !== tags['room-id']) {
                 return; 
             }
 
@@ -313,6 +313,10 @@ function initBot() {
                 const text = match[2];
                 const lowerText = text.toLowerCase();
                 
+                // --- NEW: EXPLICIT CHANNEL CHECK ---
+                // Ignore messages if they magically come from a channel we didn't join.
+                if (!botConfig.channels.includes(channel)) return;
+
                 if (botConfig.ignoredChannels.includes(channel)) {
                     return; 
                 }
@@ -333,6 +337,7 @@ function initBot() {
                 
                 const isAuthorizedUser = isBroadcaster || isModerator || isAnnouncement;
 
+                // --- SPAM TRACKER ---
                 const cleanText = text.trim();
                 if (cleanText.startsWith('!')) {
                     const command = cleanText.split(' ')[0].toLowerCase();
@@ -344,9 +349,13 @@ function initBot() {
                     if (!commandCooldowns[channel][command] || now > commandCooldowns[channel][command]) {
                         if (!commandTracker[channel][command]) commandTracker[channel][command] = [];
                         
+                        // Keep only messages from the last 60 seconds
                         commandTracker[channel][command] = commandTracker[channel][command].filter(ts => now - ts < 60000);
                         commandTracker[channel][command].push(now);
                         
+                        // Optional: Log to show it's counting (can be removed if too spammy)
+                        log(`[Tracker] ${channel} | ${command} | Count: ${commandTracker[channel][command].length}/5`);
+
                         if (commandTracker[channel][command].length >= 5) {
                             if (canSendMessage()) {
                                 chatSocket.send(`PRIVMSG #${channel} :${command}`);
@@ -363,6 +372,7 @@ function initBot() {
                     }
                 }
 
+                // --- SEQUENCE TRIGGER ---
                 if (isAuthorizedUser && !isSequenceRunning) {
                     const matchedTrigger = botConfig.triggers.find(t => lowerText.includes(t));
                     
