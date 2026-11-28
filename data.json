@@ -564,18 +564,6 @@
     "raw_date": "2026-11-26 05:14:26"
   },
   {
-    "server": "Sv10",
-    "boss": "Lord Silvester",
-    "last_kill": "2026-11-26T10:19:32+02:00",
-    "killer": "XxVILLEGAS",
-    "earliest_spawn": "2026-11-30T07:24:32+02:00",
-    "latest_spawn": "2026-11-30T07:24:32+02:00",
-    "min_hours": 93.1,
-    "max_hours": 93.1,
-    "is_fixed": true,
-    "raw_date": "2026-11-26 05:19:32"
-  },
-  {
     "server": "Sv11",
     "boss": "Lord Silvester",
     "last_kill": "2026-11-26T10:39:11+02:00",
@@ -598,18 +586,6 @@
     "max_hours": 182.0,
     "is_fixed": false,
     "raw_date": "2026-11-27 01:51:40"
-  },
-  {
-    "server": "Sv8",
-    "boss": "Nix",
-    "last_kill": "2026-11-27T08:12:20+02:00",
-    "killer": "Babayaga98",
-    "earliest_spawn": "2026-12-01T12:17:20+02:00",
-    "latest_spawn": "2026-12-02T02:12:20+02:00",
-    "min_hours": 100.1,
-    "max_hours": 114.0,
-    "is_fixed": false,
-    "raw_date": "2026-11-27 03:12:20"
   },
   {
     "server": "Sv3",
@@ -936,6 +912,18 @@
     "raw_date": "2026-11-28 10:27:23"
   },
   {
+    "server": "Sv10",
+    "boss": "Lord Silvester",
+    "last_kill": "2026-11-28T15:28:52+02:00",
+    "killer": "Longwang1",
+    "earliest_spawn": "2026-12-02T12:33:52+02:00",
+    "latest_spawn": "2026-12-02T12:33:52+02:00",
+    "min_hours": 93.1,
+    "max_hours": 93.1,
+    "is_fixed": true,
+    "raw_date": "2026-11-28 10:28:52"
+  },
+  {
     "server": "Sv1",
     "boss": "Lord of Ferea",
     "last_kill": "2026-11-28T15:16:13+02:00",
@@ -1210,6 +1198,18 @@
     "max_hours": 114.0,
     "is_fixed": false,
     "raw_date": "2026-11-28 10:28:11"
+  },
+  {
+    "server": "Sv8",
+    "boss": "Nix",
+    "last_kill": "2026-11-28T15:28:30+02:00",
+    "killer": "SolrakDVDL",
+    "earliest_spawn": "2026-12-02T19:33:30+02:00",
+    "latest_spawn": "2026-12-03T09:28:30+02:00",
+    "min_hours": 100.1,
+    "max_hours": 114.0,
+    "is_fixed": false,
+    "raw_date": "2026-11-28 10:28:30"
   },
   {
     "server": "Sv1",
