@@ -48,18 +48,6 @@
     "raw_date": "2026-11-27 00:51:33"
   },
   {
-    "server": "Sv3",
-    "boss": "Nightmare",
-    "last_kill": "2026-11-27T05:52:56+02:00",
-    "killer": "RomeosMG",
-    "earliest_spawn": "2026-11-28T22:47:56+02:00",
-    "latest_spawn": "2026-11-28T22:47:56+02:00",
-    "min_hours": 40.9,
-    "max_hours": 40.9,
-    "is_fixed": true,
-    "raw_date": "2026-11-27 00:52:56"
-  },
-  {
     "server": "Sv7",
     "boss": "Nightmare",
     "last_kill": "2026-11-27T06:01:44+02:00",
@@ -442,6 +430,18 @@
     "max_hours": 40.9,
     "is_fixed": true,
     "raw_date": "2026-11-28 10:52:19"
+  },
+  {
+    "server": "Sv3",
+    "boss": "Nightmare",
+    "last_kill": "2026-11-28T15:58:04+02:00",
+    "killer": "SLAzazel",
+    "earliest_spawn": "2026-11-30T08:53:04+02:00",
+    "latest_spawn": "2026-11-30T08:53:04+02:00",
+    "min_hours": 40.9,
+    "max_hours": 40.9,
+    "is_fixed": true,
+    "raw_date": "2026-11-28 10:58:04"
   },
   {
     "server": "Sv3",
