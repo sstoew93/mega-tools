@@ -1,0 +1,512 @@
+[
+  {
+    "server": "Sv19",
+    "boss": "Nix",
+    "killer": "PinkKitty",
+    "raw_date_br": "2026-11-28 09:10:51"
+  },
+  {
+    "server": "Sv3",
+    "boss": "God of Darkness",
+    "killer": "NoFeArSLAY",
+    "raw_date_br": "2026-11-28 03:51:29"
+  },
+  {
+    "server": "Sv11",
+    "boss": "God of Darkness",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-28 02:18:43"
+  },
+  {
+    "server": "Sv4",
+    "boss": "God of Darkness",
+    "killer": "Kasperiano",
+    "raw_date_br": "2026-11-28 01:51:00"
+  },
+  {
+    "server": "Sv19",
+    "boss": "God of Darkness",
+    "killer": "dooJob",
+    "raw_date_br": "2026-11-27 21:33:03"
+  },
+  {
+    "server": "Sv15",
+    "boss": "God of Darkness",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-27 21:26:21"
+  },
+  {
+    "server": "Sv14",
+    "boss": "God of Darkness",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-27 21:12:34"
+  },
+  {
+    "server": "Sv11",
+    "boss": "Nix",
+    "killer": "ElfCitara",
+    "raw_date_br": "2026-11-27 18:31:17"
+  },
+  {
+    "server": "Sv9",
+    "boss": "Nix",
+    "killer": "SicooBET",
+    "raw_date_br": "2026-11-27 17:39:55"
+  },
+  {
+    "server": "Sv10",
+    "boss": "Nix",
+    "killer": "Collette",
+    "raw_date_br": "2026-11-27 14:33:48"
+  },
+  {
+    "server": "Sv11",
+    "boss": "Lord of Ferea",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-27 13:12:38"
+  },
+  {
+    "server": "Sv9",
+    "boss": "Lord of Ferea",
+    "killer": "Guasakaka",
+    "raw_date_br": "2026-11-27 11:19:02"
+  },
+  {
+    "server": "Sv8",
+    "boss": "God of Darkness",
+    "killer": "Kasperiano",
+    "raw_date_br": "2026-11-27 11:05:23"
+  },
+  {
+    "server": "Sv4",
+    "boss": "Lord of Ferea",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-27 09:27:12"
+  },
+  {
+    "server": "Sv4",
+    "boss": "Nix",
+    "killer": "Babayaga98",
+    "raw_date_br": "2026-11-27 08:58:01"
+  },
+  {
+    "server": "Sv6",
+    "boss": "Nix",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-27 08:32:11"
+  },
+  {
+    "server": "Sv7",
+    "boss": "Nix",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-27 08:27:47"
+  },
+  {
+    "server": "Sv1",
+    "boss": "Nix",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-27 07:30:31"
+  },
+  {
+    "server": "Sv5",
+    "boss": "Lord of Ferea",
+    "killer": "Babayaga98",
+    "raw_date_br": "2026-11-27 05:43:48"
+  },
+  {
+    "server": "Sv6",
+    "boss": "Lord of Ferea",
+    "killer": "MlemMlem",
+    "raw_date_br": "2026-11-27 05:33:34"
+  },
+  {
+    "server": "Sv5",
+    "boss": "Nix",
+    "killer": "Babayaga98",
+    "raw_date_br": "2026-11-27 05:23:21"
+  },
+  {
+    "server": "Sv3",
+    "boss": "Nix",
+    "killer": "Babayaga98",
+    "raw_date_br": "2026-11-27 04:14:36"
+  },
+  {
+    "server": "Sv19",
+    "boss": "Lord of Ferea",
+    "killer": "Babayaga96",
+    "raw_date_br": "2026-11-27 03:28:56"
+  },
+  {
+    "server": "Sv18",
+    "boss": "Nix",
+    "killer": "Sacakaka",
+    "raw_date_br": "2026-11-27 03:25:05"
+  },
+  {
+    "server": "Sv8",
+    "boss": "Nix",
+    "killer": "Babayaga98",
+    "raw_date_br": "2026-11-27 03:12:20"
+  },
+  {
+    "server": "Sv17",
+    "boss": "Lord of Ferea",
+    "killer": "Babayaga98",
+    "raw_date_br": "2026-11-27 02:25:48"
+  },
+  {
+    "server": "Sv17",
+    "boss": "Nix",
+    "killer": "Zlostar",
+    "raw_date_br": "2026-11-27 02:17:40"
+  },
+  {
+    "server": "Sv14",
+    "boss": "Lord of Ferea",
+    "killer": "Babayaga98",
+    "raw_date_br": "2026-11-27 01:54:38"
+  },
+  {
+    "server": "Sv10",
+    "boss": "Lord of Ferea",
+    "killer": "Colt90",
+    "raw_date_br": "2026-11-27 01:51:40"
+  },
+  {
+    "server": "Sv3",
+    "boss": "Lord of Ferea",
+    "killer": "Babayaga96",
+    "raw_date_br": "2026-11-27 01:45:33"
+  },
+  {
+    "server": "Sv14",
+    "boss": "Nix",
+    "killer": "Babayaga98",
+    "raw_date_br": "2026-11-27 01:20:48"
+  },
+  {
+    "server": "Sv8",
+    "boss": "Lord of Ferea",
+    "killer": "ElfCitara",
+    "raw_date_br": "2026-11-27 00:37:39"
+  },
+  {
+    "server": "Sv18",
+    "boss": "Lord of Ferea",
+    "killer": "ElfCitara",
+    "raw_date_br": "2026-11-26 23:45:08"
+  },
+  {
+    "server": "Sv16",
+    "boss": "Lord of Ferea",
+    "killer": "ElfCitara",
+    "raw_date_br": "2026-11-26 23:38:22"
+  },
+  {
+    "server": "Sv2",
+    "boss": "Lord of Ferea",
+    "killer": "ElfCitara",
+    "raw_date_br": "2026-11-26 20:53:52"
+  },
+  {
+    "server": "Sv7",
+    "boss": "Lord of Ferea",
+    "killer": "ElfCitara",
+    "raw_date_br": "2026-11-26 20:25:59"
+  },
+  {
+    "server": "Sv1",
+    "boss": "Lord of Ferea",
+    "killer": "ElfCitara",
+    "raw_date_br": "2026-11-26 14:43:49"
+  },
+  {
+    "server": "Sv15",
+    "boss": "Lord of Ferea",
+    "killer": "ElfCitara",
+    "raw_date_br": "2026-11-26 13:45:45"
+  },
+  {
+    "server": "Sv1",
+    "boss": "Balgass",
+    "killer": "JMeiling",
+    "raw_date_br": "2026-11-24 23:07:18"
+  },
+  {
+    "server": "Sv17",
+    "boss": "God of Darkness",
+    "killer": "SunSUM",
+    "raw_date_br": "2026-11-24 11:06:04"
+  },
+  {
+    "server": "Sv2",
+    "boss": "God of Darkness",
+    "killer": "Kasperiano",
+    "raw_date_br": "2026-11-24 09:10:27"
+  },
+  {
+    "server": "Sv16",
+    "boss": "God of Darkness",
+    "killer": "TORIANO",
+    "raw_date_br": "2026-11-24 03:23:09"
+  },
+  {
+    "server": "Sv1",
+    "boss": "God of Darkness",
+    "killer": "PinkMoon",
+    "raw_date_br": "2026-11-23 20:06:13"
+  },
+  {
+    "server": "Sv6",
+    "boss": "God of Darkness",
+    "killer": "HangeZoe",
+    "raw_date_br": "2026-11-23 17:41:57"
+  },
+  {
+    "server": "Sv9",
+    "boss": "God of Darkness",
+    "killer": "HangeZoe",
+    "raw_date_br": "2026-11-23 17:09:55"
+  },
+  {
+    "server": "Sv11",
+    "boss": "God of Darkness",
+    "killer": "JamaLdw",
+    "raw_date_br": "2026-11-23 14:09:55"
+  },
+  {
+    "server": "Sv19",
+    "boss": "Nix",
+    "killer": "Fidela",
+    "raw_date_br": "2026-11-23 09:25:53"
+  },
+  {
+    "server": "Sv18",
+    "boss": "God of Darkness",
+    "killer": "PinkMoon",
+    "raw_date_br": "2026-11-23 08:20:05"
+  },
+  {
+    "server": "Sv9",
+    "boss": "Lord of Ferea",
+    "killer": "Crimsum",
+    "raw_date_br": "2026-11-23 05:42:38"
+  },
+  {
+    "server": "Sv14",
+    "boss": "God of Darkness",
+    "killer": "TORIANO",
+    "raw_date_br": "2026-11-23 03:15:38"
+  },
+  {
+    "server": "Sv9",
+    "boss": "Nix",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-23 01:49:23"
+  },
+  {
+    "server": "Sv6",
+    "boss": "Lord of Ferea",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-23 01:43:25"
+  },
+  {
+    "server": "Sv11",
+    "boss": "Nix",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-23 01:01:05"
+  },
+  {
+    "server": "Sv1",
+    "boss": "Nix",
+    "killer": "MrMyzor",
+    "raw_date_br": "2026-11-23 00:48:31"
+  },
+  {
+    "server": "Sv4",
+    "boss": "Lord of Ferea",
+    "killer": "TORIANO",
+    "raw_date_br": "2026-11-23 00:17:44"
+  },
+  {
+    "server": "Sv10",
+    "boss": "Nix",
+    "killer": "XxVILLEGAS",
+    "raw_date_br": "2026-11-23 00:11:56"
+  },
+  {
+    "server": "Sv5",
+    "boss": "God of Darkness",
+    "killer": "HangeZoe",
+    "raw_date_br": "2026-11-22 22:41:27"
+  },
+  {
+    "server": "Sv7",
+    "boss": "Nix",
+    "killer": "MrMyzor",
+    "raw_date_br": "2026-11-22 21:10:30"
+  },
+  {
+    "server": "Sv11",
+    "boss": "Lord of Ferea",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-22 20:58:38"
+  },
+  {
+    "server": "Sv10",
+    "boss": "Lord of Ferea",
+    "killer": "FMKDivine",
+    "raw_date_br": "2026-11-22 20:50:29"
+  },
+  {
+    "server": "Sv3",
+    "boss": "Nix",
+    "killer": "MrMyzor",
+    "raw_date_br": "2026-11-22 20:45:14"
+  },
+  {
+    "server": "Sv8",
+    "boss": "Lord of Ferea",
+    "killer": "TORIANO",
+    "raw_date_br": "2026-11-22 20:09:28"
+  },
+  {
+    "server": "Sv5",
+    "boss": "Nix",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-22 20:03:25"
+  },
+  {
+    "server": "Sv18",
+    "boss": "Nix",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-22 19:57:11"
+  },
+  {
+    "server": "Sv8",
+    "boss": "God of Darkness",
+    "killer": "ElfCitara",
+    "raw_date_br": "2026-11-22 19:38:02"
+  },
+  {
+    "server": "Sv18",
+    "boss": "Lord of Ferea",
+    "killer": "TORIANO",
+    "raw_date_br": "2026-11-22 19:12:39"
+  },
+  {
+    "server": "Sv5",
+    "boss": "Lord of Ferea",
+    "killer": "TORIANO",
+    "raw_date_br": "2026-11-22 18:51:30"
+  },
+  {
+    "server": "Sv15",
+    "boss": "God of Darkness",
+    "killer": "NexusDM",
+    "raw_date_br": "2026-11-22 18:29:39"
+  },
+  {
+    "server": "Sv14",
+    "boss": "Nix",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-22 18:14:03"
+  },
+  {
+    "server": "Sv19",
+    "boss": "Lord of Ferea",
+    "killer": "ElfCitara",
+    "raw_date_br": "2026-11-22 18:06:02"
+  },
+  {
+    "server": "Sv14",
+    "boss": "Lord of Ferea",
+    "killer": "TORIANO",
+    "raw_date_br": "2026-11-22 17:42:22"
+  },
+  {
+    "server": "Sv3",
+    "boss": "God of Darkness",
+    "killer": "Kasperiano",
+    "raw_date_br": "2026-11-22 17:18:35"
+  },
+  {
+    "server": "Sv4",
+    "boss": "Nix",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-22 15:53:43"
+  },
+  {
+    "server": "Sv6",
+    "boss": "Nix",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-22 15:50:53"
+  },
+  {
+    "server": "Sv8",
+    "boss": "Nix",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-22 15:07:02"
+  },
+  {
+    "server": "Sv17",
+    "boss": "Nix",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-22 15:03:09"
+  },
+  {
+    "server": "Sv19",
+    "boss": "God of Darkness",
+    "killer": "Kasperiano",
+    "raw_date_br": "2026-11-22 14:58:41"
+  },
+  {
+    "server": "Sv1",
+    "boss": "Lord of Ferea",
+    "killer": "ElfCitara",
+    "raw_date_br": "2026-11-22 14:05:51"
+  },
+  {
+    "server": "Sv3",
+    "boss": "Lord of Ferea",
+    "killer": "MrMyzor",
+    "raw_date_br": "2026-11-22 12:59:56"
+  },
+  {
+    "server": "Sv16",
+    "boss": "Lord of Ferea",
+    "killer": "MrMyzor",
+    "raw_date_br": "2026-11-22 12:44:07"
+  },
+  {
+    "server": "Sv4",
+    "boss": "God of Darkness",
+    "killer": "Kasperiano",
+    "raw_date_br": "2026-11-22 12:43:26"
+  },
+  {
+    "server": "Sv2",
+    "boss": "Lord of Ferea",
+    "killer": "PipiLord92",
+    "raw_date_br": "2026-11-22 11:20:57"
+  },
+  {
+    "server": "Sv15",
+    "boss": "Lord of Ferea",
+    "killer": "JapaWzz",
+    "raw_date_br": "2026-11-22 10:49:59"
+  },
+  {
+    "server": "Sv7",
+    "boss": "Lord of Ferea",
+    "killer": "MrMyzor",
+    "raw_date_br": "2026-11-22 09:27:03"
+  },
+  {
+    "server": "Sv17",
+    "boss": "Lord of Ferea",
+    "killer": "SolrakDVDL",
+    "raw_date_br": "2026-11-22 08:46:29"
+  }
+]
