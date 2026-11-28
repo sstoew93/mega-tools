@@ -277,101 +277,105 @@ function initBot() {
         };
 
         chatSocket.onmessage = (event) => {
-            const rawMessage = event.data;
-            
-            if (rawMessage.startsWith('PING')) {
-                chatSocket.send('PONG :tmi.twitch.tv');
-                return;
-            }
+            // Twitch may bundle multiple IRC messages into one WebSocket frame.
+            // Process each line independently so one ignored line doesn't skip the rest.
+            const rawMessages = String(event.data).split(/\r\n/).filter(Boolean);
 
-            if (rawMessage.includes('CAP * ACK')) return;
+            rawMessages.forEach((rawMessage) => {
+                if (rawMessage.startsWith('PING')) {
+                    chatSocket.send('PONG :tmi.twitch.tv');
+                    return;
+                }
 
-            let tags = {};
-            let actualMessagePart = rawMessage;
+                if (rawMessage.includes('CAP * ACK')) return;
 
-            if (rawMessage.startsWith('@')) {
-                const tagsEndIndex = rawMessage.indexOf(' ');
-                const rawTags = rawMessage.substring(1, tagsEndIndex);
-                actualMessagePart = rawMessage.substring(tagsEndIndex + 1);
+                let tags = {};
+                let actualMessagePart = rawMessage;
+
+                if (rawMessage.startsWith('@')) {
+                    const tagsEndIndex = rawMessage.indexOf(' ');
+                    const rawTags = rawMessage.substring(1, tagsEndIndex);
+                    actualMessagePart = rawMessage.substring(tagsEndIndex + 1);
                 
-                rawTags.split(';').forEach(tag => {
-                    const [key, value] = tag.split('=');
-                    tags[key] = value;
-                });
-            }
+                    rawTags.split(';').forEach(tag => {
+                        const [key, value] = tag.split('=');
+                        tags[key] = value;
+                    });
+                }
 
-            // --- ORIGINAL SHARED CHAT BLOCKER (Reverted) ---
-            if (tags['source-room-id'] && tags['source-room-id'] !== tags['room-id']) {
-                return; 
-            }
-
-            const match = actualMessagePart.match(/(?:PRIVMSG|USERNOTICE) #([^ ]+) :(.*)/);
-            
-            if (match) {
-                const channel = match[1].toLowerCase();
-                const text = match[2];
-                const lowerText = text.toLowerCase();
-                
-                if (botConfig.ignoredChannels.includes(channel)) {
+                // --- ORIGINAL SHARED CHAT BLOCKER (Reverted) ---
+                if (tags['source-room-id'] && tags['source-room-id'] !== tags['room-id']) {
                     return; 
                 }
 
-                const senderMatch = actualMessagePart.match(/^:([^!]+)!/);
-                const sender = senderMatch ? senderMatch[1].toLowerCase() : 'system';
-
-                if (sender === botConfig.username) return;
-
-                const isAnnouncement = actualMessagePart.includes('USERNOTICE') && tags['msg-id'] === 'announcement';
-                const badges = tags['badges'] || '';
+                const match = actualMessagePart.match(/(?:PRIVMSG|USERNOTICE) #([^ ]+) :(.*)/);
+            
+                if (match) {
+                    const channel = match[1].toLowerCase();
+                    const text = match[2];
+                    const lowerText = text.toLowerCase();
                 
-                const isBroadcasterByBadge = badges.includes('broadcaster/1');
-                const isBroadcasterById = tags['user-id'] && tags['room-id'] && (tags['user-id'] === tags['room-id']);
-                
-                const isBroadcaster = isBroadcasterByBadge || isBroadcasterById;
-                const isModerator = badges.includes('moderator/1');
-                
-                const isAuthorizedUser = isBroadcaster || isModerator || isAnnouncement;
+                    if (botConfig.ignoredChannels.includes(channel)) {
+                        return; 
+                    }
 
-                // --- SPAM TRACKER ---
-                const cleanText = text.trim();
-                if (cleanText.startsWith('!')) {
-                    const command = cleanText.split(' ')[0].toLowerCase();
-                    const now = Date.now();
+                    const senderMatch = actualMessagePart.match(/^:([^!]+)!/);
+                    const sender = senderMatch ? senderMatch[1].toLowerCase() : 'system';
+
+                    if (sender === botConfig.username) return;
+
+                    const isAnnouncement = actualMessagePart.includes('USERNOTICE') && tags['msg-id'] === 'announcement';
+                    const badges = tags['badges'] || '';
+                
+                    const isBroadcasterByBadge = badges.includes('broadcaster/1');
+                    const isBroadcasterById = tags['user-id'] && tags['room-id'] && (tags['user-id'] === tags['room-id']);
+                
+                    const isBroadcaster = isBroadcasterByBadge || isBroadcasterById;
+                    const isModerator = badges.includes('moderator/1');
+                
+                    const isAuthorizedUser = isBroadcaster || isModerator || isAnnouncement;
+
+                    // --- SPAM TRACKER ---
+                    const cleanText = text.trim();
+                    if (cleanText.startsWith('!')) {
+                        const command = cleanText.split(' ')[0].toLowerCase();
+                        const now = Date.now();
                     
-                    if (!commandTracker[channel]) commandTracker[channel] = {};
-                    if (!commandCooldowns[channel]) commandCooldowns[channel] = {};
+                        if (!commandTracker[channel]) commandTracker[channel] = {};
+                        if (!commandCooldowns[channel]) commandCooldowns[channel] = {};
                     
-                    if (!commandCooldowns[channel][command] || now > commandCooldowns[channel][command]) {
-                        if (!commandTracker[channel][command]) commandTracker[channel][command] = [];
+                        if (!commandCooldowns[channel][command] || now > commandCooldowns[channel][command]) {
+                            if (!commandTracker[channel][command]) commandTracker[channel][command] = [];
                         
-                        // Original 60-second window (60000ms)
-                        commandTracker[channel][command] = commandTracker[channel][command].filter(ts => now - ts < 60000);
-                        commandTracker[channel][command].push(now);
+                            // Original 60-second window (60000ms)
+                            commandTracker[channel][command] = commandTracker[channel][command].filter(ts => now - ts < 60000);
+                            commandTracker[channel][command].push(now);
                         
-                        if (commandTracker[channel][command].length >= 5) {
-                            if (canSendMessage()) {
-                                chatSocket.send(`PRIVMSG #${channel} :${command}`);
-                                replyTimestamps.push(now);
+                            if (commandTracker[channel][command].length >= 5) {
+                                if (canSendMessage()) {
+                                    chatSocket.send(`PRIVMSG #${channel} :${command}`);
+                                    replyTimestamps.push(now);
                                 
-                                commandCooldowns[channel][command] = now + 60000; 
-                                commandTracker[channel][command] = []; 
+                                    commandCooldowns[channel][command] = now + 60000; 
+                                    commandTracker[channel][command] = []; 
                                 
-                                log(`🚀 Echoed "${command}" in #${channel} (Spam detected)`);
-                            } else {
-                                log(`⚠️ Rate limit hit. Could not echo "${command}" in #${channel}`);
+                                    log(`🚀 Echoed "${command}" in #${channel} (Spam detected)`);
+                                } else {
+                                    log(`⚠️ Rate limit hit. Could not echo "${command}" in #${channel}`);
+                                }
                             }
                         }
                     }
-                }
 
-                if (isAuthorizedUser && !isSequenceRunning) {
-                    const matchedTrigger = botConfig.triggers.find(t => lowerText.includes(t));
+                    if (isAuthorizedUser && !isSequenceRunning) {
+                        const matchedTrigger = botConfig.triggers.find(t => lowerText.includes(t));
                     
-                    if (matchedTrigger) {
-                        runMessageSequence(channel, sender, matchedTrigger);
+                        if (matchedTrigger) {
+                            runMessageSequence(channel, sender, matchedTrigger);
+                        }
                     }
                 }
-            }
+            });
         };
 
         chatSocket.onclose = () => {
