@@ -264,18 +264,6 @@
     "raw_date": "2026-11-27 02:37:24"
   },
   {
-    "server": "Sv17",
-    "boss": "God of Darkness",
-    "last_kill": "2026-11-24T16:06:04+02:00",
-    "killer": "SunSUM",
-    "earliest_spawn": "2026-11-29T02:06:04+02:00",
-    "latest_spawn": "2026-12-01T16:06:04+02:00",
-    "min_hours": 106.0,
-    "max_hours": 168.0,
-    "is_fixed": false,
-    "raw_date": "2026-11-24 11:06:04"
-  },
-  {
     "server": "Sv2",
     "boss": "Nightmare",
     "last_kill": "2026-11-27T10:59:50+02:00",
@@ -876,18 +864,6 @@
     "raw_date": "2026-11-26 13:45:45"
   },
   {
-    "server": "Sv1",
-    "boss": "Lord of Ferea",
-    "last_kill": "2026-11-26T19:43:49+02:00",
-    "killer": "ElfCitara",
-    "earliest_spawn": "2026-11-30T17:43:49+02:00",
-    "latest_spawn": "2026-12-04T09:43:49+02:00",
-    "min_hours": 94.0,
-    "max_hours": 182.0,
-    "is_fixed": false,
-    "raw_date": "2026-11-26 14:43:49"
-  },
-  {
     "server": "Sv7",
     "boss": "Lord of Ferea",
     "last_kill": "2026-11-27T01:25:59+02:00",
@@ -1284,6 +1260,18 @@
     "raw_date": "2026-11-27 21:33:03"
   },
   {
+    "server": "Sv1",
+    "boss": "Lord of Ferea",
+    "last_kill": "2026-11-28T15:16:13+02:00",
+    "killer": "DlZot",
+    "earliest_spawn": "2026-12-02T13:16:13+02:00",
+    "latest_spawn": "2026-12-06T05:16:13+02:00",
+    "min_hours": 94.0,
+    "max_hours": 182.0,
+    "is_fixed": false,
+    "raw_date": "2026-11-28 10:16:13"
+  },
+  {
     "server": "Sv4",
     "boss": "God of Darkness",
     "last_kill": "2026-11-28T06:51:00+02:00",
@@ -1378,5 +1366,17 @@
     "max_hours": 168.0,
     "is_fixed": false,
     "raw_date": "2026-11-28 10:15:39"
+  },
+  {
+    "server": "Sv17",
+    "boss": "God of Darkness",
+    "last_kill": "2026-11-28T15:16:17+02:00",
+    "killer": "PEGAOVEIO",
+    "earliest_spawn": "2026-12-03T01:16:17+02:00",
+    "latest_spawn": "2026-12-05T15:16:17+02:00",
+    "min_hours": 106.0,
+    "max_hours": 168.0,
+    "is_fixed": false,
+    "raw_date": "2026-11-28 10:16:17"
   }
 ]
